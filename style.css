@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto Mono, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.loading {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.navbar{
+  position: absolute;
+  margin-top: 20rem;
+  
+}
+
+.navbar a {
+  font-family: Roboto Mono;
+}
+.intro {
+  display: flex;
+}
+
+.hello {
+  position: relative;
+  filter: blur(0px);
+  color: white;
+  top: -20vh;
+}
+.typing {
+  position: relative;
+  filter: blur(0px);
+  color: white;
+  top: -20vh;
+}
+.typing::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  border-right: 2px solid white;
+  right: -8px;
+  animation: blink 0.5s infinite ease;
+}
+@media screen and (max-width:1200px){
+  .hello{
+    font-size: 100%
+  }
+  .typing {
+    font-size: 100%;
+  }
+}
+.bg {
+  background: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80')
+    no-repeat center center/cover;
+  position: absolute;
+  width: 105vw;
+  height: 105vh;
+  z-index: -1;
+  filter: blur(0px);
+  margin: 0;
+}
+.loading-text {
+  font-size: 80px;
+  color: white;
+  position: absolute;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
