@@ -1,30 +1,28 @@
-
-const texts = ['am Ryan Coulson.', 'make websites!', 'love coding!', 'want to work with you!']
+const texts = [
+  'am Ryan Coulson.',
+  'make websites!',
+  'love coding!',
+  'want to work with you!',
+];
 let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
 
-
-
-(function type(){
-
-  if (count === texts.length){
+(function type() {
+  if (count === texts.length) {
     count = 0;
   }
   currentText = texts[count];
   letter = currentText.slice(0, ++index);
 
   document.querySelector('.typing').textContent = letter;
-  if(letter.length === currentText.length) {
+  if (letter.length === currentText.length) {
     count++;
     index = 0;
   }
-  setTimeout(type, 300);
-}())
-
-
-
+  setTimeout(type, 200);
+})();
 
 let load = 0;
 
@@ -50,6 +48,3 @@ function blurring() {
 const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
-
-
-
