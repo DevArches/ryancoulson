@@ -6,52 +6,58 @@
 body {
     background-color: black;
 }
-.write {
-    color: #5a5a5aaf;
-    font-family: Long Cang;
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
+p {
+  color: white;
+  font-family: Roboto Mono;
+  max-width: 55vw;
+  margin-left: 5rem;
+  font-size: 20px
 }
+
+h2 {
+  color: white;
+  font-family: Roboto Mono;
+  max-width: 55vw;
+  margin-left: 5rem;
+  
+}
+/*<------------------------background text--------------->*/
 #body{
-    margin-left: 20px;
-    margin-bottom: 0;
-    padding-top: 10vh;
-    padding-bottom: 0;
-    
+  margin-left: 20px;
+  margin-bottom: 0;
+  padding-top: 10vh;
+  padding-bottom: 0;
+  
 }
 #body-after {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #h1 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-p {
-    color: white;
-    font-family: Roboto Mono;
-    max-width: 55vw;
-    margin-left: 5rem;
-    font-size: 20px
-}
+
 #p {
-    margin-left: 29px;
-    margin-top: 0px;
-    padding-bottom: 0;
+  margin-left: 29px;
+  margin-top: 0px;
+  padding-bottom: 0;
 }
 #h2 {
-    margin-left: 29px;
-    margin-top: 0px;
-    padding-bottom: 0;
+  margin-left: 29px;
+  margin-top: 0px;
+  padding-bottom: 0;
 }
-h2 {
-    color: white;
-    font-family: Roboto Mono;
-    max-width: 55vw;
-    margin-left: 5rem;
-    
+.write {
+  color: #5a5a5aaf;
+  font-family: Long Cang;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
 }
+
+
+/*<------------------------header text--------------->*/
 .header {
   color: white;
   font-family: Roboto Mono;
@@ -95,9 +101,12 @@ h2 {
   opacity: 100;
 }
 
-.navbar {
-    font-family: Roboto Mono;
-}
+
+
+
+
+
+/*<------------------------responsive--------------->*/
 
 @media screen and (max-width:1200px){
     .header{

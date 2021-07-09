@@ -5,55 +5,13 @@
   font-family: Roboto Mono, sans-serif;
   background-color: black;
 }
-a {
-  color: #f2f2f2;
-}
-a:hover {
-  color:#696969;
-}
-.links {
-  position: absolute;
-  left: 2vw;
-  bottom: 2vw;
-}
 body {
   overflow: hidden;
   margin: 0;
 }
-.function {
-  font-size: 160%;
-}
-.vars {
-  color: #b9b9b9ea;
-  position: absolute;
-  left: 9vw;
-  top: 5vw;
-  transform: rotate(-3deg);
-}
-.code {
-  position: absolute;
-  right: 7vw;
-  bottom: 5vw;
-  transform: rotate(6deg);
-  color: #a8a8a8d7;
-}
-h3 {
-  background-color: black;
-  margin: 0;
-  font-family: Long Cang;
-  font-size: 130%;
-}
 
-.loading {
-  font-family: 'Ubuntu', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  border: 0;
-  padding: 0;
+h1 {
+  font-size: 3rem;
 }
 
 button {
@@ -61,17 +19,25 @@ button {
   padding: 0;
 }
 
+/*<------------------------typing--------------->*/
+
+.typingText {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 .intro {
   display: flex;
+  z-index: 1;
 }
-.tab1 {
-  position: relative;
-  left: 20px;
-}
-.tab2 {
-  position: relative;
-  left: 40px;
-}
+
 .hello {
   position: relative;
   filter: blur(0px);
@@ -91,32 +57,8 @@ button {
   right: -8px;
   animation: blink 0.5s infinite ease;
 }
-@media screen and (max-width: 1200px) {
-  .hello {
-    font-size: 100%;
-  }
-  .typing {
-    font-size: 100%;
-  }
-  .code, .vars, .function, h3 {
-    font-size: 90%
-  }
-}
-.bg {
 
-  background-color: black;
-  position: absolute;
-  width: 105vw;
-  height: 105vh;
-  z-index: -1;
-  filter: blur(0px);
-  margin: 0;
-}
-.loading-text {
-  font-size: 80px;
-  color: white;
-  position: absolute;
-}
+
 
 @keyframes blink {
   0% {
@@ -126,6 +68,8 @@ button {
     opacity: 1;
   }
 }
+
+/*<------------------------nav--------------->*/
 
 .topnav {
   background-color: transparent;
@@ -139,7 +83,7 @@ button {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .topnav a:hover {
@@ -151,5 +95,63 @@ button {
   background-color: #252525;
   color: white;
 }
+a {
+  color: #f2f2f2;
+}
+a:hover {
+  color:#696969;
+}
+.links {
+  position: absolute;
+  left: 2vw;
+  bottom: 2vw;
+}
 
+/*<------------------------background texts--------------->*/
+.tab1 {
+  position: relative;
+  left: 20px;
+}
+.tab2 {
+  position: relative;
+  left: 40px;
+}
 
+.function {
+  font-size: 1.7rem;
+}
+.vars {
+  color: #b9b9b9ea;
+  position: absolute;
+  left: 9vw;
+  top: 5vw;
+  transform: rotate(-3deg);
+}
+.code {
+  position: absolute;
+  right: 7vw;
+  bottom: 5vw;
+  transform: rotate(6deg);
+  color: #a8a8a8d7;
+}
+
+h3 {
+  background-color: black;
+  margin: 0;
+  font-family: Long Cang;
+  font-size: 1.6rem;
+}
+
+/*<------------------------responsive--------------->*/
+
+@media screen and (max-width: 1200px) {
+  .hello {
+    font-size: 100%;
+  }
+  .typing {
+    font-size: 100%;
+  }
+  .code, .vars, .function, h3 {
+    font-size: .8rem;
+  }
+}
