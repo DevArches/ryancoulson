@@ -1,8 +1,9 @@
 const texts = [
   'am Ryan Coulson.',
   'make websites!',
+  'am a nerd.',
   'love coding!',
-  'want to work with you!',
+  'am a gamer.',
 ];
 let count = 0;
 let index = 0;

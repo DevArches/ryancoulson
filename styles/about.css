@@ -5,6 +5,8 @@
 }
 body {
     background-color: black;
+    margin-top: 0;
+    margin-right: 0;
 }
 p {
   color: white;
@@ -19,7 +21,8 @@ h2 {
   font-family: Roboto Mono;
   max-width: 55vw;
   margin-left: 5rem;
-  
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /*<------------------------background text--------------->*/
 #body{
@@ -101,21 +104,65 @@ h2 {
   opacity: 100;
 }
 
+/*<------------------------navigation--------------->*/
 
+.topnav {
+  background-color: transparent;
+  overflow: hidden;
+  font-family: Roboto Mono;
+}
 
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+}
 
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #252525;
+  color: white;
+}
+a {
+  color: #f2f2f2;
+}
+a:hover {
+  color:#696969;
+}
+.links {
+  position: absolute;
+  right: 2vw;
+  bottom: 2vw;
+  font-size: 2.5em; 
+  color: rgb(211, 211, 211); 
+  background-color: black;
+}
 
 
 /*<------------------------responsive--------------->*/
 
 @media screen and (max-width:1200px){
     .header{
-      font-size: 100%
+      font-size: 1rem;
     }
     p{
-      font-size: 90%;
+      font-size: 0.9rem;
     }
     h2 {
-        font-size: 100%;
+        font-size: 0.8rem;
+    }
+    .links {
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      margin-left: 5px
     }
   }
