@@ -11,14 +11,14 @@ let currentText = '';
 let letter = '';
 
 (function type() {
-  if (count === texts.length) {
+  if (count == texts.length) {
     count = 0;
   }
   currentText = texts[count];
   letter = currentText.slice(0, ++index);
 
   document.querySelector('.typing').textContent = letter;
-  if (letter.length === currentText.length) {
+  if (letter.length == currentText.length) {
     count++;
     index = 0;
   }
@@ -27,9 +27,7 @@ let letter = '';
 
 function lightMode() {
   const element = document.body;
-  const img = document.getElementById('sun')
   element.classList.toggle('lightMode');
-  img.classList.toggle('fa fas-moon');
 }
 
 // let load = 0;
