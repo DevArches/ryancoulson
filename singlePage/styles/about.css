@@ -18,7 +18,7 @@ h2 {
   margin-bottom: 0;
 }
 .lightMode .about {
-  background-color:rgb(219, 219, 219)
+  background-color:rgb(230, 230, 230)
 }
 .about {
   background-color: rgb(39, 39, 39);
@@ -33,7 +33,8 @@ h2 {
   
 }
 #body-after {
-  margin-left: 20px;
+  margin: 20px 0 0px 20px;
+  padding-bottom: 20px
 }
 #doctype {
   padding-top: 6rem;

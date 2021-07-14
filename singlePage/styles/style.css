@@ -28,14 +28,29 @@ h1 {
 .lightMode h3 {
   color: #757575;
 }
-hr {
+#hr1 {
   margin: 0;
+  margin-top: 1rem;
+}
+#hr2 {
+  margin: 0;
+  
 }
 
 .lightMode hr {
   color: black;
 }
+h4 {
+  display: inline;
+}
 
+#li {
+  display: inline;
+}
+
+.list {
+  margin-left: 4rem;
+}
 /*<------------------------typing--------------->*/
 
 .typingText {
@@ -92,6 +107,7 @@ hr {
   overflow: hidden;
   position: fixed;
   right: 0;
+  z-index: 999;
 }
 
 .topnav a {
@@ -139,15 +155,15 @@ a:hover {
 }
 .vars {
   position: absolute;
-  left: 9vw;
-  top: 5vw;
-  transform: rotate(-3deg);
+  left: 2vw;
+  top: 3vw;
+  
 }
 .code {
   position: absolute;
-  right: 7vw;
+  left: 2vw;
   bottom: 5vw;
-  transform: rotate(6deg);
+  
 }
 
 h3 {
@@ -193,6 +209,9 @@ h3 {
   .links {
     font-size: 2rem;
   }
+  .typingText {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -204,5 +223,8 @@ h3 {
   .function,
   h3 {
     font-size: 1rem;
+  }
+  .typingText {
+    height: 50vh;
   }
 }
