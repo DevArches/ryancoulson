@@ -19,6 +19,7 @@ h2 {
 }
 .about {
   background-color: rgb(39, 39, 39);
+  padding-left: 70px;
 }
 /*<------------------------background text--------------->*/
 #body {
@@ -81,8 +82,8 @@ h2 {
 .label:after {
   content: 'Ryan Coulson';
   opacity: 0;
-  margin-left: -80px;
   position: relative;
+
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -102,6 +103,9 @@ h2 {
 /*<------------------------responsive--------------->*/
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding-left: 0px;
+  }
   .header {
     font-size: 1rem;
   }
