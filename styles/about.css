@@ -1,45 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Roboto+Mono:wght@100;400&family=Rock+Salt&display=swap');
 
-* {
-  background-color: black;
-}
-body {
-    background-color: black;
-    margin-top: 0;
-    margin-right: 0;
-}
 p {
-  color: white;
   font-family: Roboto Mono;
   max-width: 55vw;
   margin-left: 5rem;
-  font-size: 20px
+  font-size: 20px;
 }
 
 h2 {
-  color: white;
   font-family: Roboto Mono;
   max-width: 55vw;
   margin-left: 5rem;
   margin-top: 0;
   margin-bottom: 0;
 }
+.lightMode .about {
+  background-color: rgb(230, 230, 230);
+}
+.about {
+  background-color: rgb(39, 39, 39);
+}
 /*<------------------------background text--------------->*/
-#body{
+#body {
   margin-left: 20px;
   margin-bottom: 0;
   padding-top: 10vh;
   padding-bottom: 0;
-  
 }
 #body-after {
-  margin-left: 20px;
+  margin: 20px 0 0px 20px;
+  padding-bottom: 20px;
 }
-
+#doctype {
+  padding-top: 6rem;
+}
 #h1 {
   margin-left: 20px;
 }
-
 
 #p {
   margin-left: 29px;
@@ -59,10 +56,8 @@ h2 {
   margin: 0;
 }
 
-
 /*<------------------------header text--------------->*/
 .header {
-  color: white;
   font-family: Roboto Mono;
   font-weight: 400;
   font-size: 4rem;
@@ -72,8 +67,8 @@ h2 {
 }
 
 .label {
-  background: #000000;
-  color: #fff;
+  background: transparent;
+
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -86,14 +81,14 @@ h2 {
 .label:after {
   content: 'Ryan Coulson';
   opacity: 0;
-    margin-left: -80px;
+  margin-left: -80px;
   position: relative;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .label:hover {
-  background: #000000;
+  background: transparent;
 }
 
 .label:hover:before {
@@ -104,65 +99,22 @@ h2 {
   opacity: 100;
 }
 
-/*<------------------------navigation--------------->*/
-
-.topnav {
-  background-color: transparent;
-  overflow: hidden;
-  font-family: Roboto Mono;
-}
-
-.topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #252525;
-  color: white;
-}
-a {
-  color: #f2f2f2;
-}
-a:hover {
-  color:#696969;
-}
-.links {
-  position: absolute;
-  right: 2vw;
-  bottom: 2vw;
-  font-size: 2.5em; 
-  color: rgb(211, 211, 211); 
-  background-color: black;
-}
-
-
 /*<------------------------responsive--------------->*/
 
-@media screen and (max-width:1200px){
-    .header{
-      font-size: 1rem;
-    }
-    p{
-      font-size: 0.9rem;
-    }
-    h2 {
-        font-size: 0.8rem;
-    }
-    .links {
-      top: 0;
-      left: 0;
-      background-color: transparent;
-      margin-left: 5px
-    }
+@media screen and (max-width: 1200px) {
+  .header {
+    font-size: 1rem;
   }
+  p {
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+  .links {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    margin-left: 5px;
+  }
+}

@@ -3,11 +3,10 @@
 * {
   box-sizing: border-box;
   font-family: Roboto Mono, sans-serif;
-  
 }
 body {
   margin: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -22,10 +21,35 @@ h1 {
   color: rgb(71, 71, 71);
 }
 
-.lightMode h3 {
-  color: #757575
+.lightMode #sun {
+  color: rgb(71, 71, 71);
 }
 
+.lightMode h3 {
+  color: #757575;
+}
+#hr1 {
+  margin: 0;
+  margin-top: 1rem;
+}
+#hr2 {
+  margin: 0;
+}
+
+.lightMode hr {
+  color: black;
+}
+h4 {
+  display: inline;
+}
+
+#li {
+  display: inline;
+}
+
+.list {
+  margin-left: 4rem;
+}
 /*<------------------------typing--------------->*/
 
 .typingText {
@@ -36,8 +60,8 @@ h1 {
   height: 70vh;
   overflow: hidden;
   margin: 0;
-  border: 0;
-  padding: 0;
+  padding-top: 25rem;
+  padding-bottom: 30rem;
 }
 
 .intro {
@@ -79,7 +103,9 @@ h1 {
 .topnav {
   background-color: transparent;
   overflow: hidden;
-  
+  position: fixed;
+  right: 0;
+  z-index: 999;
 }
 
 .topnav a {
@@ -88,35 +114,24 @@ h1 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1rem;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #252525;
-  color: white;
-}
 a {
   color: #f2f2f2;
 }
 a:hover {
   color: #696969;
 }
+#sun:hover {
+  color: #696969;
+}
 #sun {
   font-size: 2rem;
   cursor: pointer;
-  padding: 11px 16px;
-
+  padding: 12px 18px;
   float: right;
 }
 .links {
-  position: absolute;
-  right: 2vw;
-  bottom: 2vw;
   font-size: 2.5em;
   color: rgb(211, 211, 211);
   background-color: transparent;
@@ -136,18 +151,14 @@ a:hover {
   font-size: 1.7rem;
 }
 .vars {
-  
   position: absolute;
-  left: 9vw;
-  top: 5vw;
-  transform: rotate(-3deg);
+  left: 2vw;
+  top: 3vw;
 }
 .code {
   position: absolute;
-  right: 7vw;
+  left: 2vw;
   bottom: 5vw;
-  transform: rotate(6deg);
-  
 }
 
 h3 {
@@ -158,6 +169,22 @@ h3 {
   color: #a8a8a881;
 }
 
+/* <-------------------------scrollbar------------------->*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /*<------------------------responsive--------------->*/
 
 @media screen and (max-width: 1200px) {
@@ -173,6 +200,9 @@ h3 {
   .links {
     font-size: 2rem;
   }
+  .typingText {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -185,5 +215,7 @@ h3 {
   h3 {
     font-size: 1rem;
   }
+  .typingText {
+    height: 50vh;
+  }
 }
-

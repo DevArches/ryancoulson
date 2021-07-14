@@ -4,27 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <title>Portfolio</title>
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="/index.html" class="active">Home</a>
-      <a href="/about.html">About</a>
-      <i class="fas fa-sun" id="sun" onclick="lightMode()"></i>
+      <nav class="links">
+        <a
+          href="https://github.com/Rianail"
+          target="_blank"
+          title="My GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ryanjcoulson/"
+          target="_blank"
+          title="My LinkedIn Profile"
+        >
+          <i class="fab fa-linkedin"> </i>
+        </a>
+      </nav>
+      <i
+        class="fas fa-sun"
+        id="sun"
+        onclick="lightMode()"
+        title="Toggle Light Mode"
+      ></i>
     </div>
 
     <div class="vars">
       <h3 class="function">const texts = [</h3>
-      <h3 class="tab1">'am Ryan Coulson.',</h3>
-      <h3 class="tab1">'make websites!',</h3>
-      <h3 class="tab1">'am a nerd.',</h3>
-      <h3 class="tab1">'love coding!',</h3>
-      <h3 class="tab1">'am a gamer.'</h3>
+      <h3 class="tab1" id="varText">'am Ryan Coulson.',</h3>
+      <h3 class="tab1" id="varText">'make websites!',</h3>
+      <h3 class="tab1" id="varText">'am a nerd.',</h3>
+      <h3 class="tab1" id="varText">'love coding!',</h3>
+      <h3 class="tab1" id="varText">'am a gamer.'</h3>
       <h3>];</h3>
       <h3>let count = 0;</h3>
       <h3>let index = 0;</h3>
@@ -56,23 +79,85 @@
         <h3 class="tab1">setTimeout(type, 200);</h3>
         <h3>};</h3>
       </div>
-     
     </div>
-  
-    <nav class="links">
-      <a href="https://github.com/Rianail" target="_blank"
-        ><i class="fab fa-github"></i
-      ></a>
-
-      <a href="https://www.linkedin.com/in/ryanjcoulson/" target="_blank"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-    </nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+    <!-- <------------------------about section---------------------------------------->
+      <hr id="hr1">
+    <div class="about">
+      <h3 class="write" id="doctype">&lt;!DOCTYPE html&gt;</h3>
+      <h3 class="write">&lt;html lang="en"&gt;</h3>
+      <h3 class="write" id="body">&lt;body&gt;</h3>
+      <h3 class="write" id="h1">&lt;h1&gt;</h3>
+      <h1 class="header">
+        A little bit about <span class="label"></span>
+        <h3 class="write" id="h1">&lt;/h1&gt;</h3>
+      </h1>
+      <h3 class="write" id="p">&lt;p&gt;</h3>
+      <p>
+        I am a self-taught front-end web developer and I am always working on
+        improving my skills. I designed my first website back while in
+        high-school and have always had a passion for the web. I've finally
+        started my transition into making web development my career.
+      </p>
+      <h3 class="write" id="p">&lt;/p&gt;</h3>
+      <h3 class="write" id="h2">&lt;h2&gt;</h3>
+      <h2>Skills</h2>
+      <h3 class="write" id="h2">&lt;ul&gt;</h3>
+      <div class="list">
+      <h3 class="write" id="li">&lt;li&gt;</h3>
+      <h4>• HTML</h4>
+      <h3 class="write" id="li">&lt;/li&gt;</h3>
+    </div>
+      <div class="list">
+      <h3 class="write" id="li">&lt;li&gt;</h3>
+      <h4>• CSS</h4>
+      <h3 class="write" id="li">&lt;/li&gt;</h3>
+    </div>
+      <div class="list">
+      <h3 class="write" id="li">&lt;li&gt;</h3>
+      <h4>• JavaScript</h4>
+      <h3 class="write" id="li">&lt;/li&gt;</h3>
+    </div>
+      <div class="list">
+      <h3 class="write" id="li">&lt;li&gt;</h3>
+      <h4>• NPM</h4>
+      <h3 class="write" id="li">&lt;/li&gt;</h3>
+    </div>
+      <div class="list">
+      <h3 class="write" id="li">&lt;li&gt;</h3>
+      <h4>• Git</h4>
+      <h3 class="write" id="li">&lt;/li&gt;</h3>
+    </div>
+      <h3 class="write" id="h2">&lt;/ul&gt;</h3>
+      <h3 class="write" id="h2">&lt;/h2&gt;</h3>
+      <h3 class="write" id="body-after">&lt;/body&gt;</h3>
+    </div>
+    
+    <!-- <------------------------contact section---------------------------------------->
+      <hr id="hr2">
+      <div class="contactForm">
+      <h1 class="contactHeader">Contact Me</h1>
+      <div class="container">
+        <div class="form" id="form">
+        <form target="_blank" action="https://formsubmit.co/ryanjcoulson@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="https://www.ryanjcoulson.net/thanks.html">
+            <div>
+                <div >
+                    <div class="col">
+                        <input type="text" name="name" class="email" id="email" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="email" id="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" class="textArea" id="textArea" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="contactSubmit" id="contactSubmit">Submit Form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+    <script src="/script.js"></script>
   </body>
 </html>
