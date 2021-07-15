@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Roboto+Mono:wght@100;400&family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=VT323&display=swap');
 
 * {
   box-sizing: border-box;
-  font-family: Roboto Mono, sans-serif;
+  font-family: 'Electrolize', sans-serif;
 }
 body {
   margin: 0;
-  background-color: rgb(27, 26, 49);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,4,50,1) 35%, rgba(56,6,85,1) 100%);
   color: white;
+
 }
 
+
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 #hr1 {
@@ -45,8 +50,8 @@ h4 {
 /*<------------------------typing--------------->*/
 
 .typingText {
+  
   position: relative;
-  font-family: 'Roboto Mono', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +69,7 @@ h4 {
 }
 
 .hello {
+  
   position: relative;
   filter: blur(0px);
 }
@@ -158,6 +164,7 @@ h3 {
   font-family: 'East Sea Dokdo', cursive;
   font-size: 1.6rem;
   color: #be661e;
+  text-shadow: 0 0 1px #FF0000, 0 0 2px #0000FF;
 }
 .colorText {
   background-color: transparent;
