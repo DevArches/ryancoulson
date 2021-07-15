@@ -1,0 +1,48 @@
+.lightMode #pink {
+  color: rgb(211, 74, 193);
+}
+.lightMode #purple {
+  color: rgb(109, 3, 196);
+}
+.lightMode #yellow {
+  color: rgb(219, 143, 0);
+}
+.lightMode #green {
+  color: rgb(11, 117, 1);
+}
+.lightMode #blue {
+  color: rgb(0, 98, 163);
+}
+.lightMode hr {
+  color: black;
+}
+.lightMode {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.lightMode a {
+  color: rgb(71, 71, 71);
+}
+
+.lightMode #sun {
+  color: rgb(71, 71, 71);
+}
+
+.lightMode h3 {
+  color: #b14c4c;
+}
+.lightMode #form {
+  background-color: white;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.lightMode #textArea,
+.lightMode #email,
+.lightMode #contactSubmit {
+  background-color: white;
+  color: black;
+  border: 2px solid #969696;
+}
+.lightMode .about {
+  background-color: rgb(230, 230, 230);
+}

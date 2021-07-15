@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/about.css" />
     <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/lightMode.css">
     <title>Portfolio</title>
   </head>
   <body>
@@ -45,40 +46,40 @@
 
     <div class="typingText">
       <div class="vars">
-        <h3 class="function">const texts = [</h3>
-        <h3 class="tab1" id="varText">'am Ryan Coulson.',</h3>
-        <h3 class="tab1" id="varText">'make websites!',</h3>
-        <h3 class="tab1" id="varText">'am a nerd.',</h3>
-        <h3 class="tab1" id="varText">'love coding!',</h3>
-        <h3 class="tab1" id="varText">'am a gamer.'</h3>
+        <h3 class="function"><span class="colorText" id="purple">const</span> <span class="colorText" id="red">texts</span> <span class="colorText" id="purple">=</span> [</h3>
+        <h3 class="tab1" id="varText"><span class="colorText" id="yellow">'am Ryan Coulson.'</span>,</h3>
+        <h3 class="tab1" id="varText"><span class="colorText" id="yellow">'make websites!'</span>,</h3>
+        <h3 class="tab1" id="varText"><span class="colorText" id="yellow">'am a nerd.'</span>,</h3>
+        <h3 class="tab1" id="varText"><span class="colorText" id="yellow">'love coding!'</span>,</h3>
+        <h3 class="tab1" id="varText"><span class="colorText" id="yellow">'am a gamer.'</span></h3>
         <h3>];</h3>
-        <h3>let count = 0;</h3>
-        <h3>let index = 0;</h3>
-        <h3>let currentText = ' ';</h3>
-        <h3>let letter = ' ';</h3>
+        <h3><span class="colorText" id="purple">let</span> count = <span class="colorText" id="red">0</span>;</h3>
+        <h3><span class="colorText" id="purple">let</span> index = <span class="colorText" id="red">0</span>;</h3>
+        <h3><span class="colorText" id="purple">let</span> currentText = ' ';</h3>
+        <h3><span class="colorText" id="purple">let</span> letter = ' ';</h3>
       </div>
       <div class="intro">
         <h1 class="hello">Hello, I&nbsp;</h1>
         <h1 class="typing"></h1>
       </div>
       <section class="bg"></section>
-      <!-- <div class="loading-text">0%</div> -->
+
       <div class="code">
-        <h3 class="function">function typingText() {</h3>
-        <h3 class="tab1">if (count === texts.length) {</h3>
-        <h3 class="tab2">count = 0;</h3>
+        <h3 class="function"><span class="colorText" id="purple">function</span> <span class="colorText" id="green">typingText</span>() {</h3>
+        <h3 class="tab1"><span class="colorText" id="purple">if</span> (count <span class="colorText" id="purple">===</span> <span class="colorText" id="red">texts</span>.length) {</h3>
+        <h3 class="tab2">count <span class="colorText" id="purple">=</span> <span class="colorText" id="red">0</span>;</h3>
         <h3 class="tab1">}</h3>
-        <h3 class="tab1">currentText = texts[count];</h3>
-        <h3 class="tab1">letter = currentText.slice(0, ++index);</h3>
+        <h3 class="tab1">currentText <span class="colorText" id="purple">=</span> <span class="colorText" id="red">texts</span[count];</h3>
+        <h3 class="tab1">letter <span class="colorText" id="purple">=</span> currentText.slice(<span class="colorText" id="red">0</span>, <span class="colorText" id="purple">++</span>index);</h3>
 
         <h3 class="tab1">
-          document.querySelector('.typing').textContent = letter;
+          <span class="colorText" id="red">document</span>.<span class="colorText" id="green">querySelector</span>('<span class="colorText" id="yellow">.typing'</span>).textContent <span class="colorText" id="purple">=</span> letter;
         </h3>
-        <h3 class="tab1">if (letter.length === currentText.length) {</h3>
-        <h3 class="tab2">count++;</h3>
-        <h3 class="tab2">index = 0;</h3>
+        <h3 class="tab1"><span class="colorText" id="purple">if</span> (letter.<span class="colorText" id="red">length</span> <span class="colorText" id="purple">===</span> currentText.<span class="colorText" id="red">length</span>) {</h3>
+        <h3 class="tab2">count<span class="colorText" id="purple">++</span>;</h3>
+        <h3 class="tab2">index <span class="colorText" id="purple">=</span> <span class="colorText" id="red">0</span>;</h3>
         <h3 class="tab1">}</h3>
-        <h3 class="tab1">setTimeout(type, 200);</h3>
+        <h3 class="tab1"><span class="colorText" id="blue">setTimeout</span>(<span class="colorText" id="green">type</span>, <span class="colorText" id="red">200</span>);</h3>
         <h3>};</h3>
       </div>
     </div>
@@ -97,8 +98,7 @@
       <p>
         I am a self-taught front-end web developer and I am always working on
         improving my skills. I designed my first website back while in
-        high-school and have always had a passion for the web. I've finally
-        started my transition into making web development my career.
+        high-school and have always had a passion for the web at the beginning of 2021 I finally began making my dream of becoming a web developer a reality. 
       </p>
       <h3 class="write" id="p">&lt;/p&gt;</h3>
       <h3 class="write" id="h2">&lt;h2&gt;</h3>
@@ -127,6 +127,11 @@
       <div class="list">
         <h3 class="write" id="li">&lt;li&gt;</h3>
         <h4>• Git</h4>
+        <h3 class="write" id="li">&lt;/li&gt;</h3>
+      </div>
+      <div class="list">
+        <h3 class="write" id="li">&lt;li&gt;</h3>
+        <h4>• BootStrap</h4>
         <h3 class="write" id="li">&lt;/li&gt;</h3>
       </div>
       <h3 class="write" id="h2">&lt;/ul&gt;</h3>

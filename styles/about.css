@@ -14,9 +14,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
-.lightMode .about {
-  background-color: rgb(230, 230, 230);
-}
+
 .about {
   background-color: rgb(39, 39, 39);
   padding-left: 70px;
@@ -50,8 +48,8 @@ h2 {
   padding-bottom: 0;
 }
 .write {
-  color: #5a5a5aaf;
-  font-family: Long Cang;
+  color: #ff7676af;
+  font-family: 'East Sea Dokdo', cursive;
   font-size: 22px;
   padding: 0;
   margin: 0;
